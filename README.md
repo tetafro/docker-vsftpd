@@ -8,7 +8,8 @@ Zero-security allow-everything-to-everyone FTP server.
 
 ```sh
 docker run -d \
-    -v /var/lib/vsftpd:/data \
-    -p 21:21 \
+    --volume /var/lib/vsftpd:/data \
+    --publish 21:21 \
+    --name ftp \
     ghcr.io/tetafro/vsftpd
 ```
