@@ -6,7 +6,7 @@ RUN apt update && \
 
 RUN usermod -d /data nobody && \
     mkdir -p /data && \
-    chmod 777 /data && \
+    chmod 755 /data && \
     mkdir -p /var/run/vsftpd/empty
 
 COPY vsftpd.conf /etc/vsftpd.conf
