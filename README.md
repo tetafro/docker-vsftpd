@@ -4,6 +4,8 @@ vsftpd in Docker. Based on Debian stable slim image.
 
 Zero-security allow-everything-to-everyone FTP server.
 
+Version format: `${vsftpd_version}-${build_version}`.
+
 ## Run
 
 ```sh
