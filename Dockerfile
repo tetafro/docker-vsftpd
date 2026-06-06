@@ -1,7 +1,7 @@
 FROM debian:bookworm-slim
 
 RUN apt update && \
-    apt install -y vsftpd=3.0.3-13+b2 && \
+    apt install -qq -y vsftpd=3.0.3-13+b2 && \
     apt clean
 
 RUN usermod -d /data nobody && \
